@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 0.9px;
+            word-spacing: 0.4rem;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #FFD700, #FF6347, #4CAF50, #00BFFF);
+            background-size: 400% 400%;
+            animation: gradientBG 4s infinite alternate;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .container {
+            width: 26rem;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 5px 0;
+            color: #555;
+            font-weight: 600 ;
+        }
+        p{
+            font-weight: 600 ;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: seagreen;
+            color: black;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2e8b57;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" required>
+
+            <input type="submit" value="Login">
+        </form>
+        <p style="text-align: center;">I don't have an account. Click here to <a href="/signup">Signup</a></p>
+    </div>
+
+</body>
+
+</html>

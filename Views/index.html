@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #FFD700, #FF6347, #4CAF50, #00BFFF);
+            background-size: 400% 400%;
+            animation: gradientBG 10s infinite alternate;
+            letter-spacing: 0.9px;
+            word-spacing: 0.4rem;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            }
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+        .container{
+            text-align: center;
+        }
+        .btns{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .btns a{
+            display: block;
+            width: 4rem;
+            padding: 5px 10px;
+            background-color: #00BFFF;
+            color: black;
+            border-radius: 4px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome</h1>
+    <h3>We provide different services</h3>
+    <p>To explore our services, please Signup or Login</p>
+    <div class="btns">
+        <a href="/signup">Signup</a>
+        <a href="/login">Login</a>
+    </div>
+    </div>
+</body>
+</html>

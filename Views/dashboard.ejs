@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Development Solutions Dashboard</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 0.9px;
+        word-spacing: 0.2rem;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(45deg, #ffd700, #ff6347, #4caf50, #00bfff);
+        background-size: 400% 400%;
+        animation: gradientBG 10s infinite alternate;
+        height: 100vh;
+      }
+
+      @keyframes gradientBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 100% 50%;
+        }
+      }
+
+      header {
+        padding: 3px 10px;
+        display: flex;
+        align-items: center;
+        background-color: rgba(0, 255, 200, 0.576);
+        backdrop-filter: blur(10px);
+        justify-content: space-between;
+      }
+
+      header form button {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        background-color: #3ce75b;
+        margin-right: 10px;
+      }
+
+      .dashboard {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+      }
+
+      .card {
+        background-color: #fff;
+        width: 300px;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        transition: 0.5s;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .card:hover {
+        scale: 1.06;
+      }
+
+      .card h3 {
+        color: #3498db;
+      }
+
+      .card p {
+        color: #555;
+      }
+
+      .contact-btn {
+        background-color: #2ecc71;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .card {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h2 style="color: cornflowerblue">
+        web<span style="color: #e74c3c">T</span>ech
+      </h2>
+      <form action="/logout" method="post"><button  style="cursor: pointer;">LogOut</button></form>
+    </header>
+
+    <div class="dashboard">
+      <div class="card">
+        <h3>Web Design</h3>
+        <p>
+          We develop interactive and user-friendly frontend solutions using
+          modern technologies.
+        </p>
+        <button class="contact-btn">Contact Us</button>
+      </div>
+
+      <div class="card">
+        <h3>Frontend Development</h3>
+        <p>
+          We develop interactive and user-friendly frontend solutions using
+          modern technologies.
+        </p>
+        <button class="contact-btn">Contact Us</button>
+      </div>
+
+      <div class="card">
+        <h3>E-Commerce Web Design</h3>
+        <p>
+          We develop interactive and user-friendly frontend solutions using
+          modern technologies.
+        </p>
+        <button class="contact-btn">Contact Us</button>
+      </div>
+
+      <div class="card">
+        <h3>Educational Web Sites</h3>
+        <p>
+          We develop interactive and user-friendly frontend solutions using
+          modern technologies.
+        </p>
+        <button class="contact-btn">Contact Us</button>
+      </div>
+
+      <div class="card">
+        <h3>Food Delivery Web Design</h3>
+        <p>
+          We develop interactive and user-friendly frontend solutions using
+          modern technologies.
+        </p>
+        <button class="contact-btn">Contact Us</button>
+      </div>
+
+      <div class="card">
+        <h3>Hosting Solutions</h3>
+        <p>
+          We develop interactive and user-friendly frontend solutions using
+          modern technologies.
+        </p>
+        <button class="contact-btn">Contact Us</button>
+      </div>
+
+      <div class="card">
+        <h3>Data Base Provides</h3>
+        <p>
+          We develop interactive and user-friendly frontend solutions using
+          modern technologies.
+        </p>
+        <button class="contact-btn">Contact Us</button>
+      </div>
+
+      <div class="card">
+        <h3>Responsive Design</h3>
+        <p>
+          We develop interactive and user-friendly frontend solutions using
+          modern technologies.
+        </p>
+        <button class="contact-btn">Contact Us</button>
+      </div>
+
+      <!-- Repeat the card structure for the remaining services -->
+
+      <div class="card">
+        <h3>SEO Optimization</h3>
+        <p>
+          We optimize your website for search engines to improve visibility and
+          ranking.
+        </p>
+        <button class="contact-btn">Contact Us</button>
+      </div>
+    </div>
+  </body>
+</html>

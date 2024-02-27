@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 404 - Invalid URL</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(45deg, #ff6b6b, #556270, #4ecdc4);
+            background-size: 400% 400%;
+            animation: gradientBG 10s infinite alternate;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 0.9px;
+            word-spacing: 0.2rem;
+            text-align: center;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .error-container {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 2px solid #fff;
+        }
+
+        a:hover {
+            border-bottom: 2px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="error-container">
+        <h1>Error 404 - Invalid URL</h1>
+        <p>Oops! It looks like the page you are trying to access doesn't exist.</p>
+        <p>Go back to <a href="/">home</a> or contact support.</p>
+    </div>
+
+</body>
+
+</html>
